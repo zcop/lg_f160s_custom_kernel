@@ -969,9 +969,10 @@ static const int krait_needs_vmin(void)
 	};
 }
 
-/* set min CPU Voltage
+
 static void krait_apply_vmin(struct acpu_level *tbl)
 {
+/* Allow undervolting
 	for (; tbl->speed.khz != 0; tbl++)
 		if (tbl->vdd_core < 1150000)
 			tbl->vdd_core = 1150000;
